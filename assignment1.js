@@ -4,18 +4,18 @@
 // 60.00). 
 // calculateFruitCost(fruitName, quantity)
 // For example, calculateFruitCost('orange', 2) should return "2 Oranges for KES 60.00
-class Fruits{
-     constructor(fruitName,quantity){
-        this.fruitName=fruitName
-        this.quantity=quantity
-        this.price=30.00
-        this.getValueS=function(){
-            return`${this.quantity} ${this.fruitName} for KES ${this.price*this.quantity}`
+class Fruits {
+    constructor(fruitName, quantity) {
+        this.fruitName = fruitName
+        this.quantity = quantity
+        this.price = 30.00
+        this.getValueS = function () {
+            return `${this.quantity} ${this.fruitName} for KES ${this.price * this.quantity}`
         }
     }
 }
 
-var Person1=new Fruits('Banana',3)
+var Person1 = new Fruits('Banana', 3)
 console.log(Person1.getValueS())
 
 // Write a class KioskCalc that has the following fruitsPriceList object.
@@ -26,17 +26,17 @@ console.log(Person1.getValueS())
 // getTotalCost( ) method. 
 
 // kioskCalc.getTotalCost( )  // returns “2 orange for KES 60”
-class KioskCalc{
-    constructor (Fruits,quantity){
-        this.Fruits=Fruits
-        this.quantity=quantity
-        this.fruitsPriceList={ "orange": 30, "mango": 15, "avocado": 40 };
-        this.getTotalCost=function(){
-            return `${this.quantity} ${this.Fruits} for KES ${this.Fruits*this.fruitsPriceList.orange}`
+class KioskCalc {
+    constructor(Fruits, quantity) {
+        this.Fruits = Fruits
+        this.quantity = quantity
+        this.fruitsPriceList = { "orange": 30, "mango": 15, "avocado": 40 };
+        this.getTotalCost = function () {
+            return `${this.quantity} ${this.Fruits} for KES ${this.quantity * this.fruitsPriceList.orange}`
 
 
         }
     }
 }
-var orange=new KioskCalc('Orange',3)
+var orange = new KioskCalc('Orange', 8)
 console.log(orange.getTotalCost())
